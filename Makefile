@@ -1,5 +1,5 @@
 
-run: bin/python
+run: bin/python install
 	$< main.py
 
 install: bin/pip
