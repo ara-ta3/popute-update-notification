@@ -49,7 +49,7 @@ if __name__ == "__main__":
         link = r.get("href")
         if not (title in saved and saved[title]["image"] is not None):
             time.sleep(1)
-            res = request_to_popute(url)
+            res = request_to_popute(link)
             image_url = find_image_url(res)
             saved[title] = {
                 "url": link,
